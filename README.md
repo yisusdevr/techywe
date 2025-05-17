@@ -97,17 +97,7 @@ The application includes a comprehensive logging system to aid in development an
 - Open the browser console to see detailed logs of application activity
 - Log levels include DEBUG, INFO, WARN, and ERROR with color coding
 - API calls, user interactions, and component lifecycle events are all logged
-- To configure logging in development:
-  ```javascript
-  import logger from './utils/logger';
-  
-  // Change log level
-  logger.config.setLevel(logger.LEVELS.DEBUG);
-  
-  // Disable/Enable logging
-  logger.config.disable();
-  logger.config.enable();
-  ```
+
 
 ## Project Structure
 
