@@ -1,0 +1,96 @@
+/* Set base font family to Jost for the entire application */
+body {
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply theme-specific styles */
+body[data-theme='dark'] {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+body[data-theme='light'] {
+  background-color: #f0f2f5;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Heading styles with Jost font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+/* Add smooth transitions for theme changes */
+.ant-layout,
+.ant-layout-header,
+.ant-layout-footer,
+.ant-layout-content,
+.ant-card,
+.ant-table,
+.ant-descriptions,
+.ant-form-item,
+.ant-input,
+.ant-btn {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Logo styles */
+.App-logo {
+  height: 40px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Header title styles */
+.header-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Theme switch position in smaller screens */
+@media (max-width: 576px) {
+  .ant-layout-header {
+    padding: 0 12px;
+  }
+}
+
+/* App container styles */
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
